@@ -25,7 +25,7 @@ save="$3"
 path="$4"
 out="$5"
 cmd="/usr/bin/vifm"
-termcmd="/usr/bin/kitty --class TermFileChooser"
+termcmd="${TERMCMD:-/usr/bin/kitty}"
 
 if [ "$save" = "1" ]; then
 	# /usr/bin/touch $path

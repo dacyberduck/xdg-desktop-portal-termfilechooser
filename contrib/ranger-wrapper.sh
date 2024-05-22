@@ -25,7 +25,7 @@ save="$3"
 path="$4"
 out="$5"
 cmd="/usr/bin/ranger"
-termcmd="/usr/bin/kitty"
+termcmd="${TERMCMD:-/usr/bin/kitty}"
 
 if [ "$save" = "1" ]; then
 	# /usr/bin/touch $path
